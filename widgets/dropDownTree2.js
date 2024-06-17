@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", init);
 
+// key
 var key = config.SECRET_API_KEY;
 
 // Registering Syncfusion license key
