@@ -174,9 +174,9 @@ function init() {
             // dropDownTreeObj.value = ['124259_1008'];
             // dropDownTreeObj.text='Chiara ditta';
         },
-        dataBind: function (args) {
+        //dataBind: function (args) {
             // dropDownTreeObj.value = ['124259_1008'];
-        }
+        //}
     });
 
     dropDownTreeObj.appendTo(document.getElementById('DropDownTree'));
