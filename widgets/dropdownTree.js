@@ -103,7 +103,8 @@ function init() {
 
     $.ajax = $.ajaxQueue; //set the default jquery ajax function as ajaxQueue
 
-    var dataSource = new ej.data.DataManager({
+    var dataSource = [];
+    dataSource = new ej.data.DataManager({
         url: url,
         adaptor: new SistemiAjaxDataAdaptor(
             {
@@ -131,8 +132,8 @@ function init() {
         ),
         crossDomain: true
     });
+    
     var query = new ej.data.Query();
-
     query.take(500);
 
     var dropDownTreeObj = new ej.dropdowns.DropDownTree({
@@ -144,6 +145,7 @@ function init() {
          },
         fields: {
             dataSource: dataSource,
+            query: query,
             value: 'id',
             text: 'text',
             htmlAttributes: 'htmlAttribute',
