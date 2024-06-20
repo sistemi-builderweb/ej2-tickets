@@ -185,7 +185,7 @@ function init() {
 
     //dropDownTreeObj.value = ['124259_1008'];
     setTimeout(function () {
-        var ej2Obj = $input[0].ej2_instances[0];
+        var ej2Obj = document.getElementById('DropDownTree').ej2_instances[0];
         ej2Obj.value = ['124244_1014'];
     },3000)
     
