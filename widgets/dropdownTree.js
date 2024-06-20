@@ -183,9 +183,10 @@ function init() {
 
     dropDownTreeObj.appendTo(document.getElementById('DropDownTree'));
 
-    dropDownTreeObj.value = ['124259_1008'];
+    //dropDownTreeObj.value = ['124259_1008'];
     setTimeout(function () {
-        dropDownTreeObj.value = ['124244_1014'];
+        var ej2Obj = $input[0].ej2_instances[0];
+        ej2Obj.value = ['124244_1014'];
     },3000)
     
 }
